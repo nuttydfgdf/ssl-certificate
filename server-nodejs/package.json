@@ -1,0 +1,15 @@
+{
+  "name": "server-nodejs",
+  "version": "1.0.0",
+  "description": "To generate a self-signed certificate, run the following in your shell:\r ```javascript\r cd cert\r openssl genrsa -out server.key\r openssl req -new -key server.key -out csr.pem\r openssl x509 -req -days 9999 -in csr.pem -signkey server.key -out certificate.pem\r rm csr.pem\r ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

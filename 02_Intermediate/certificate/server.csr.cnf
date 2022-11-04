@@ -1,0 +1,24 @@
+[req]
+default_bits = 2048
+prompt = no
+default_md = sha256
+req_extensions = req_ext
+distinguished_name = dn
+
+[dn] # Comment: Configure Your System
+C=TH
+ST=Bangkok
+O=Nutsu
+OU=Digital Platform
+CN=nginx.local.com
+
+[ req_ext ]
+subjectAltName = @alt_names
+
+[ alt_names ] # Comment: Configure Your System
+DNS.1 = nginx.local.com
+DNS.2 = uat-env.local.com
+DNS.3 = dev-zone.local.com
+IP.1 = 127.0.0.1
+IP.2 = 127.0.0.1
+
